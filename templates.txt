@@ -1,0 +1,35 @@
+Event File:
+
+module.exports = {
+    name: "",
+    once: false,
+    async execute(message, client) {
+        
+    }
+};
+
+------------------------------------------------------------------------------------------------------------
+
+Command File:
+
+exports.run = async(client, message, args, level) => { // eslint-disable-line no-unused-vars
+
+};
+
+exports.conf = {
+    enabled: true,
+    guildOnly: false,
+    aliases: [],
+    permLevel: ""
+};
+
+exports.help = {
+    name: "",
+    category: "",
+    description: "",
+    usage: ""
+};
+
+------------------------------------------------------------------------------------------------------------
+
+message.reply({ embeds: [new Discord.MessageEmbed().setTitle("").setColor("#ff3333").setDescription("").setFooter({ text: `Command requested by ${message.author.tag}`, iconURL: message.author.displayAvatarURL })] });
